@@ -6,6 +6,8 @@ tags: tryhackme
 
 # Summary
 
+Tryhackme
+
 Gaming server is a easy machine which requires some basic enumeration to find a username in the page's source and doing some dirbusting to find a encrypted ssh-key and a password list which is used to crack the passphrase for the ssh-key. To escalate privileges we abuse the lxd group permissions to mount the host file system inside the container.
 
 # Enumeration

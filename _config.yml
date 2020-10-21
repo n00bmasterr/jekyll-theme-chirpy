@@ -13,10 +13,7 @@ title: n00bmaster                          # the main title
 tagline: Just another student with a blog :).  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
-
+        n00bmaster's blog
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'http://n00bmaster.me'
 
@@ -40,7 +37,7 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: google_meta_tag_verification # change to your verification string
+      #google_site_verification: google_meta_tag_verification # change to your verification string
 
 #--------------------------
 
@@ -50,7 +47,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: America/New_York
 
 google_analytics:
   id: ''          # Fill with your Google Analytics ID
