@@ -6,8 +6,6 @@ tags: tryhackme
 
 # Summary
 
-Tryhackme
-
 Gaming server is a easy machine which requires some basic enumeration to find a username in the page's source and doing some dirbusting to find a encrypted ssh-key and a password list which is used to crack the passphrase for the ssh-key. To escalate privileges we abuse the lxd group permissions to mount the host file system inside the container.
 
 # Enumeration
@@ -76,7 +74,7 @@ Checking the uploads directory reveals a word list which possibly contains a lis
 
 Checking secret reveals a encrypted ssh key and we most likely would need to use the wordlist to crack the passphrase.
 
-![WGET](..//images/gamingserver/wget.png)
+![WGET](/assets/img/gamingserver/wget.png)
 
 However, in order to crack a ssh-key we need to convert it to a form than johntheripper will be able to understand. In order to do this we use a python script named `[ssh2john.py](http://ssh2john.py)` which comes with the johntheripper package.
 
@@ -85,7 +83,7 @@ However, in order to crack a ssh-key we need to convert it to a form than johnth
 john --wordlist=/usr/share/wordlists/rockyou.txt ssh-hash
 ```
 
-![Crack](../images/gamingserver/crack.png)
+![Crack](/assets/img/gamingserver/crack.png)
 
 John returns the password letmein.
 
