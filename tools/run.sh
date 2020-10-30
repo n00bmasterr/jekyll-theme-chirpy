@@ -108,11 +108,11 @@ _run() {
       exclude_regex="/\..*" # darwin gcc treat regex '/' as character '/'
     fi
 
-    fswatch -e "$exclude_regex" -0 -r \
-      --event Created --event Removed \
-      --event Updated --event Renamed \
-      --event MovedFrom --event MovedTo \
-      "$WORK_DIR" | xargs -0 -I {} bash "./${SYNC_TOOL}" {} "$WORK_DIR" . &
+    # fswatch -e "$exclude_regex" -0 -r \
+    #   --event Created --event Removed \
+    #   --event Updated --event Renamed \
+    #   --event MovedFrom --event MovedTo \
+    #   "$WORK_DIR" | xargs -0 -I {} bash "./${SYNC_TOOL}" {} "$WORK_DIR" . &
   fi
 
   if $docker; then
