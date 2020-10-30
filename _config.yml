@@ -19,13 +19,13 @@ url: 'http://n00bmaster.me'
 
 author: n00bmaster                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/img/avatar.jpg   # support internet resources
 
 github:
   username: n00bmasterr             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: __n00bm4st3r            # change to your twitter username
 
 social:
   name: n00bmaster                  # it will shows as the copyright owner in Footer
