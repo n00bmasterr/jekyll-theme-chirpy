@@ -1,5 +1,6 @@
 source "https://rubygems.org"
-gem 'sassc', '~> 2.1'
+gem "bcrypt"
+gem "nokogiri"
 gem "jekyll", ">=3.8.5"
 
 # Official Plugins
