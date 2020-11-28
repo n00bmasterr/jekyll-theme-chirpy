@@ -1,3 +1,9 @@
+---
+title: Bookstore 
+category: writeup
+tags: tryhackme
+---
+https://tryhackme.com/room/bookstoreoc
 # Summary
 
 Book store is a medium rated machine on TryHackMe that involves doing some basic web enumeration, fuzzing the REST API to find a parameter that is vulnerable to Local File Inclusion allowing us to retrieve the PIN for the Werkzeug console leading code execution on the system. The privesc is done by finding the `try-harder` binary which takes an integer as an input which is XOR'd with 2 other integers and spawn's a shell if the input integer matches.
