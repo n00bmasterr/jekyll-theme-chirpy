@@ -8,4 +8,5 @@ title: About
 # MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+I am a 1st year Bachelor of IT student with an interest in Cyber Security.
+I occasionally post writeups for tryhackme machines and other such things.
