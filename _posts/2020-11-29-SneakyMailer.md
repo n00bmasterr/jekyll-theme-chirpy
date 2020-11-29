@@ -1,5 +1,9 @@
 ---
+title: Sneaky Mailer 
+category: writeup
+tags: hackthebox
 ---
+
 # Summary 
 SneakyMailer is a medium rated Linux machine which involves using phishing attacks to gain a users credentials using which we are able to log into their mail account which reveals the credentials for another user who has full write access to the dev.sneakmailer.htb domain through FTP. Uploading a shell and enumerating reveals the password for the user pypi which are used to upload a malicious python package on the server. These packages when uploaded are executed by the user low giving us a reverse shell. The user low has root rights to execute pip3 which is then used to spawn a shell as root using GTFOBins.
 # NMAP:
