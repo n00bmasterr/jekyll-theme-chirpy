@@ -1,5 +1,5 @@
 ---
-title: TryhackMe - Rooms for OSCP 
+title: TryHackMe - Rooms for OSCP 
 category: writeup
 tags: others
 ---
