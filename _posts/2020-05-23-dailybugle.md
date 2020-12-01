@@ -1,5 +1,5 @@
 ---
-title: Daily Bugle 
+title: TryHackMe - Daily Bugle 
 category: writeup
 tags: tryhackme
 ---
