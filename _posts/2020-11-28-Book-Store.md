@@ -1,5 +1,5 @@
 ---
-title: Bookstore 
+title: TryHackMe - Bookstore 
 category: writeup
 tags: tryhackme
 ---
