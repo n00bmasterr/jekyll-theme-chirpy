@@ -1,5 +1,5 @@
 ---
-title: Gaming Server 
+title: Tryhackme - Gaming Server 
 category: writeup
 tags: tryhackme
 ---
