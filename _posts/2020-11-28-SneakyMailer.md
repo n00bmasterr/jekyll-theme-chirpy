@@ -1,5 +1,5 @@
 ---
-title: Sneaky Mailer 
+title: HackTheBox - Sneaky Mailer 
 category: writeup
 tags: hackthebox
 ---
