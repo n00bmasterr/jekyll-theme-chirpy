@@ -1,7 +1,7 @@
 ---
 title: CTFLearn - Easy pwn challenges 
 category: writeup
-tags: ctfs, pwn
+tags: ctfs pwn
 ---
 
 # Simple BOF
