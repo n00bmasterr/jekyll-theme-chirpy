@@ -4,6 +4,12 @@ category: writeup
 tags: ctfs pwn
 ---
 
+This post has 3 writeups for the 3 easy pwn challenges on CTFLearn.
+
+1. [Simple BOF](#simple-bof)
+2. [RIP my BOF](#rip-my-bof)
+3. [Lazy game challenge](#lazy-game-challenge)
+
 # Simple BOF
 
 We have the following message as the challenge description:
