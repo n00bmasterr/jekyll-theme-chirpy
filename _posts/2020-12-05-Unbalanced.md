@@ -1,4 +1,7 @@
 ---
+title: HackTheBox - Unbalanced 
+category: writeup
+tags: hackthebox
 ---
 # Summary
 Unbalanced was a hard rated machine on HackTheBox which involved retrieving files from rsync and decrypting the contents after which we use the squid proxy to access an internal network with multiple load balancers one of which is vulnerable to a XPATH injection attack allowing us to enumerate users and passwords. Using them we log into the box and get the user flag. The privilege escalation involves using a public exploit on a pi-hole instance which gives us a reverse shell on a docker container through which we find the root password in a bash script allowing us to su to root.
