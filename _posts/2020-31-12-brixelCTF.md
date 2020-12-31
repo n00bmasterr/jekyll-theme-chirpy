@@ -19,7 +19,7 @@ I personally solved this challenge on my windows VM so I downloaded the windows 
 
 Unzipping and running the binary presents us with a cookie clicker game which increases our score by one every time we click on a cookie.
 
-![cookiee](../images/cookieee1.png)
+![cookiee](../assets/img/brixelCTF/cookieee1.png)
 
 At first I was chasing down the wrong path of trying to attach the process with gdb on linux and IDA on windows and staring at the disassembly hoping to change the value of a register which would give me the required score. However, after talking to people on the discord it was not that at all, instead it was just using a cheat engine which made this very easy.
 
@@ -29,11 +29,11 @@ We can enter our values in the value field at the main screen.
 
 First we search for 0's as our initial score is 0. After that click on a cookie and do a `Next scan` for the value 1 and then the same for value 2. This filters out the addresses that have the value 0 → value 1 → value 2 instead of just looking for all the addresses with the value 0,1 or 2.
 
-![cookiee](../images/cookieee2.png)
+![cookiee](../assets/img/brixelCTF/cookieee2.png)
 
 There are 2 addresses which have been changing and changing the values at both addresses to 1000000 gives us the flag.
 
-![cookiee](../images/cookieee3.png)
+![cookiee](../assets/img/brixelCTF/cookieee3.png)
 
 Resources:
 
@@ -51,7 +51,7 @@ Personally I used dnSpy.
 
 Decompiling the binary and taking a look at the source code gives us the flag.
 
-![cookiee](../images/nopeeking1.png)
+![cookiee](../assets/img/brixelCTF/nopeeking1.png)
 
 ## registerme.exe
 
@@ -64,11 +64,11 @@ After opening the binary up in IDA, it prompts us to find a dll file to which I 
 
 Looking through the disassembly we can find a `activation.key` string which is first being duplicated and the being passed into `_vbaStrCmp` along with the duplicated variable after which there is a conditional jump takes place if the value returned by the function is 0. This value will be 0 as the string is being duplicated and then compared. We can bypass this check by simply patching the binary and replacing the `jz` instruction to `jnz` instruction which is the jump if not zero. This would mean that our program won't jump to the section where it says Not Registered but instead continue to the registered section.
 
-![cookiee](../images/registerme1.png)
+![cookiee](../assets/img/brixelCTF/registerme1.png)
 
 Hitting continue and removing the break point we can retrieve the flag.
 
-![cookiee](../images/registerme2.png)
+![cookiee](../assets/img/brixelCTF/registerme2.png)
 
 Resources:
 
