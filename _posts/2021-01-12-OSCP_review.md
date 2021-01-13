@@ -4,8 +4,6 @@ category: writeup
 tags: oscp
 ---
 
-# Summary:
-
 I did it! After a year of learning and working hard towards the certification coming from no IT work experience background. Admittedly I failed my first attempt with being just short and getting only 65 points. However, I managed to pass the second attempt with 80 points.
 
 There were a lot of lesson's that I learned through this process of getting my certification which I have listed at the end.
